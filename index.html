@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePlay</title>
+    <link rel="icon" type="image" href="imagenes/icon.png">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+<body>
+<header class="hero" id="inicio">
+
+<!-- Menú de navegación -->
+<nav class="nav_container" id="nav">
+
+  <img src="imagenes/logo2.png" class="nav_img">
+
+  <ul class="nav_links">
+    <li class="nav_item">
+      <a href="#inicio" class="nav_link">Inicio</a>
+    </li>
+    <li class="nav_item">
+      <a href="#servicios" class="nav_link">Servicios</a>
+    </li>
+    <li class="nav_item">
+      <a href="#populares" class="nav_link">Populares</a>
+    </li>
+    <li class="nav_item">
+      <a href="#pago" class="nav_link">Formas de pago</a>
+    </li>
+    <li class="nav_item">
+      <a href="#contacto" class="nav_link">Contacto</a>
+    </li>
+  </ul>
+
+  <a href="#nav" class="nav_hamburguer">
+    <img src="imagenes/list.svg" alt="" class="nav_icon">
+  </a>
+
+  <a href="#" class="nav_close">
+    <img src="imagenes/x-circle-fill.svg" alt="" class="nav_icon">
+  </a>
+
+</nav>
+
+<!-- Hero -->
+        <section class="hero_main contenedor">
+    
+          <figure class="hero_picture">
+            <img src="imagenes/control_portada.png" alt="control_videojuego" class="hero_img">
+          </figure>
+    
+          <div class="hero_info">
+    
+            <h1 class="hero_title">
+              GamePlay
+            </h1>
+            <p class="hero_parrafo">
+              Tienda online de videojuegos.
+            </p>
+            
+            <h2 class="hero_subtitle">
+                Registrate para recibir ofertas exclusivas
+            </h2>
+
+            <form class="hero_register contenedor" id="form_login">
+              <input type="email" name="email" placeholder="Ingresa tu email..." class="hero_input">
+              <input type="submit" onclick="mostrarMensaje()" value="Registrarme" class="hero_input hero_input_cta">
+            </form>
+
+
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <p>¡Gracias por registrarte!</p>
+            </div>
+          
+          
+          </div>
+        </section>
+    </header>
+
+<!-- Servicios -->
+    <main>
+        <section class="card" id="servicios">
+              <h1 class="card_title">
+                Nuestros servicios
+              </h1>
+
+          <section class="card_contenedor">
+            <article class="card_item">
+             <figure class="card_picture">
+                <img src="imagenes/Gaming-amico.png" alt="catálogo_videojuegos" class="card_img">
+              </figure>
+              <h3 class="card_name">
+               Amplio catálogo de videojuegos
+              </h3>
+            </article>
+            <article class="card_item">
+              <figure class="card_picture">
+                <img src="imagenes/Take Away-rafiki.png" alt="envíos" class="card_img">
+              </figure>
+             <h3 class="card_name">
+                Envíos a nivel nacional e internacional
+              </h3>
+            </article>
+            <article class="card_item">
+              <figure class="card_picture">
+               <img src="imagenes/Discount-cuate.png" alt="promociones" class="card_img">
+              </figure>
+              <h3 class="card_name">
+               Promociones y descuentos
+              </h3>
+            </article>
+         </section>
+        </section>
+
+<!-- Videojuegos populares -->
+        <section class="swiper_carrusel" id="populares">
+          <h1 class="swiper_title">
+            Videojuegos populares
+          </h1>
+
+        <div class="container">
+
+          <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/howgarts_legacy.jpg" alt="hogwarts_legacy" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 Hogwarts Legacy
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/kofXV.jpg" alt="king_of_fighter_15" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 KOF XV
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/the_last_of_us_p2.jpg" alt="the_last_of_us_2" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 The Last Of Us Part II
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/demons_souls.jpg" alt="demons_soul" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 Demon's Souls
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/god_of_war.jpg" alt="god_of_war" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 God Of War Ragnarok
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/the_last_of_us.jpg" alt="the_last_of_us" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 The Last Of Us Part I
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/horizon.jpg" alt="horizon_forbidden_west" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 Horizon Forbidden West
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/spiderman.jpg" alt="spider_man" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 Spider-Man Miles Morales
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="swiper_picture">
+                  <img src="imagenes/videojuegos/returnal.jpg" alt="returnal" class="swiper_img">
+                </figure>
+                <h3 class="swiper_name">
+                 Returnal
+                </h3>
+                <p>&#x2b50&#x2b50&#x2b50&#x2b50&#x2b50</p>
+              </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+          </div>
+
+        </div>
+        </section>
+
+<!-- Swiper JS --> 
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="app.js"></script>
+   
+<!-- Formas de pago -->
+      <section class="card" id="pago">
+        <h1 class="card_title">
+          Formas de pago
+        </h1>
+
+    <section class="card_contenedor">
+      <article class="card_item">
+       <figure class="card_picture">
+          <img src="imagenes/Wallet-rafiki.png" alt="efectivo" class="card_img">
+        </figure>
+        <h3 class="card_name">
+         Efectivo
+        </h3>
+      </article>
+      <article class="card_item">
+        <figure class="card_picture">
+          <img src="imagenes/Credit card-rafiki.png" alt="tarjeta_crédito" class="card_img">
+        </figure>
+       <h3 class="card_name">
+          Tarjeta de crédito / débito
+        </h3>
+      </article>
+      <article class="card_item">
+        <figure class="card_picture">
+         <img src="imagenes/E-Wallet-pana.png" alt="transferencia" class="card_img">
+        </figure>
+        <h3 class="card_name">
+         Transferencia
+        </h3>
+      </article>
+   </section>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <section class="footer_contenedor">
+        
+      <div class="footer_info">
+
+        <h1 class="footer_title">
+          Registrate para obtener el catálogo completo
+        </h1>
+        <form class="footer_register contenedor" id="form_login2">
+          <input type="email" placeholder="Ingresa tu email..." class="hero_input">
+          <input type="submit" onclick="mostrarMensaje()" value="Registrarme" class="hero_input hero_input_cta">
+        </form>
+      </div>
+    </section>
+
+    <section class="footer_nav" id="contacto">
+      <div class="footer_nav_contenedor">
+        <div class="footer_nav_contenedor">
+        <img src="imagenes/logo3.png" alt="" class="footer_img">
+        <a href="#inicio" class="footer_nav_link">Inicio</a>
+        <a href="#servicios" class="footer_nav_link">Servicios</a>
+        <a href="#populares" class="footer_nav_link">Populares</a>
+        <a href="#pago" class="footer_nav_link">Formas de pago</a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/logo-facebook.svg" href="#" alt="facebook" class="footer_logo"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.svg" alt="instagram" class="footer_logo"></a>
+        <a href="https://twitter.com" target="_blank"><img src="imagenes/logo-twitter.svg" alt="twitter" class="footer_logo"></a>
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy 2023 Created by Andrea Salazar</p>
+      </div>
+    </section>
+  </footer>
+
+<!-- Manipulación del DOM -->
+<script type="text/javascript">
+
+  const form=document.getElementById("form_login");
+  form.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    const formdata= new FormData(form);
+    const data = Object.fromEntries(formdata);
+    console.log(data);
+  })
+
+  const form2=document.getElementById("form_login2");
+  form2.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    const formdata= new FormData(form2);
+    const data = Object.fromEntries(formdata);
+    console.log(data);
+    })
+
+  function mostrarMensaje() {
+      var modal = document.getElementById("modal");
+      modal.style.display = "block"; // Mostrar la capa flotante
+    }
+
+    function cerrarModal() {
+      var modal = document.getElementById("modal");
+      modal.style.display = "none"; // Ocultar la capa flotante
+      form.reset();
+      form2.reset();
+    }
+
+</script>
+
+</body>
+</html>
